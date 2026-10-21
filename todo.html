@@ -1,0 +1,16 @@
+
+<h2>To-Do List</h2>
+
+<input id="task" placeholder="Enter task">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add() {
+    list.innerHTML += "<li>" + task.value + "</li>";
+    task.value = "";
+}
+</script>
+
+<a href="index.html">Home</a>
