@@ -1,0 +1,28 @@
+<h2>Grade Checker</h2>
+
+<input id="marks" placeholder="Enter percentage">
+
+<button onclick="checkGrade()">Check Grade</button>
+
+<p id="result"></p>
+
+<script>
+function checkGrade() {
+    let m = Number(document.getElementById("marks").value);
+
+    if (m >= 90 && m <= 100) {
+        result.innerHTML = "Grade A";
+    } else if (m >= 75 && m < 90) {
+        result.innerHTML = "Grade B";
+    } else if (m >= 50 && m < 75) {
+        result.innerHTML = "Grade C";
+    } else if (m >= 0 && m < 50) {
+        result.innerHTML = "Grade D";
+    } else {
+        result.innerHTML = "Enter valid percentage";
+    }
+}
+</script>
+
+<br>
+<a href="index.html">Home</a>
